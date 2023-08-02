@@ -10,7 +10,6 @@
     "lint": "npm-run-all --parallel --continue-on-error lint:*",
     "lint:formatting": "prettier . --check --cache",
     "lint:js": "eslint . --cache --max-warnings=0 --ext .js,.mjs",
-    "lint:style": "stylelint . --cache",
     "lint:fix": "eslint --fix",
     "preview": "vite preview",
     "prepare": "husky install"

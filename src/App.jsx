@@ -1,9 +1,8 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
+import React, { useState } from "react";
+import viteLogo from "./vite.svg";
 import "./App.css";
 import { Box, Button, Link } from "@mui/material";
 import Test from "./templates/Test.jsx";
-
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,7 +20,7 @@ function App() {
       </Box>
       <h1>Vite + React</h1>
       <div className="card">
-        <Button variant="outlined" color='secondary' onClick={() => setCount((count) => count + 1)}>
+        <Button variant="outlined" color="secondary" onClick={() => setCount((prev) => prev + 1)}>
           count is {count}
         </Button>
 
